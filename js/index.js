@@ -1,3 +1,9 @@
+$(document).ready(function () {
+    $("#loading").fadeOut(3000, function () {
+        $("body").css({ overflow: "auto" })
+    })
+
+
 var typed6 = new Typed('.element', {
 	strings: ['front-end', 'and', 'Ui developer'],
 	typeSpeed: 200,
@@ -110,4 +116,5 @@ $(".side-nav .nav-links ul li a ").click(function(){
 	$("body,html").animate({scrollTop:$(href).offset().top},1000)
 	$(".side-nav .nav-links ul li a ").removeClass("active")
 	$(this).addClass("active")
+})
 })
